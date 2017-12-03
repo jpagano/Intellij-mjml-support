@@ -1,0 +1,27 @@
+<idea-plugin>
+  <id>com.jpagano.MjmlPlugin</id>
+  <name>MJML Support</name>
+  <version>1.0</version>
+  <vendor email="jordi.pagano@gmail.com" url="http://github.com/jpagano/idea-mjml-support">J.Pagano</vendor>
+
+  <description><![CDATA[
+      This plugin enables <a href="https://mjml.io/">MJML</a> support. The following features are avaible:<br>
+      <ul>
+        <li>Dedicated file type</li>
+      </ul>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <em>IN DEVELOPMENT</em>
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="145.0"/>
+
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileTypeFactory implementation="com.jpagano.filetype.MjmlFileTypeFactory"/>
+  </extensions>
+
+</idea-plugin>
